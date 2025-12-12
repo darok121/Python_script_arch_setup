@@ -66,7 +66,7 @@ def configure_locale_gen():
 
     try:
         content = PATH_LOCALE_GEN.read_text()
-        new_content = None
+        new_date = None
 
         if configure_input in content:
             new_date = content.replace(configure_input, un_configure_input)
@@ -79,7 +79,7 @@ def configure_locale_gen():
             print("Please check the spelling and try again.")
             return configure_locale_gen()
     
-        if new_content is not None:
+        if new_date is not None:
             PATH_LOCALE_GEN.write_text(new_date)
             print(f"File {PATH_LOCALE_GEN} update: add {user_input}.")
         else:
