@@ -39,6 +39,7 @@ def local_language_setup():
             print('hwclock setup[+]')
 
             return user_locale
+
             
         except subprocess.CalledProcessError as e:
             print(f"Critical error during setup: {e.stderr.decode()}")
