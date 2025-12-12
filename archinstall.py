@@ -103,7 +103,7 @@ def configure_locale_gen():
 def locale_generation():
     print("Starting locale generation (locale-gen)...")
     subprocess.run(["locale-gen"], check=True, text=True, capture_output=True)
-    print("✅ Locale generation completed[+]")
+    print("Locale generation completed[+]")
 
 
 res = welcome()    
