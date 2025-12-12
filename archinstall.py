@@ -50,7 +50,10 @@ def local_language_setup():
 res = welcome()
 
 if res == "Y" or res == "y":
-    print(local_language_setup())
+    user_input = str(input("Do you want to customize locales?[Y/n]:"))
+    if user_input == "Y" or user_input == "y":
+        local_language_setup()
+    
 else:
     print("Script stopped working, Bye")
 
