@@ -135,4 +135,6 @@ if res.lower() == 'y':
 else:
     print("Script stopped working, Bye")
 
+print("wsl test")
+
 
